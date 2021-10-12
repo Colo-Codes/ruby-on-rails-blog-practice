@@ -2,6 +2,8 @@
 
 This code was made in relation to the following awesome Ruby on Rails tutorial: https://guides.rubyonrails.org/getting_started.html
 
+---
+
 For convenience, I'm reproducing the tutorial content here, which is valid as of 12 of October 2021:
 
 ### [1 Guide Assumptions](https://guides.rubyonrails.org/getting_started.html#guide-assumptions)
