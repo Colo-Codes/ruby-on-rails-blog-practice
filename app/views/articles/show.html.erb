@@ -2,4 +2,11 @@
 
 <p><%= @article.body %></p>
 
-<%= link_to "Edit Article", edit_article_path(@article) %>
+<ul>
+<li><%= link_to "Edit Article", edit_article_path(@article) %></li>
+<%# The 'method: :delete' causes the link to make a DELETE request instead of a GET request %>
+<%# The 'data: { confirm: "Are you sure?" }' causes a confirmation dialog to appear when the link is clicked%>
+<li><%= link_to "Delete Article", article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></li> 
+</ul>

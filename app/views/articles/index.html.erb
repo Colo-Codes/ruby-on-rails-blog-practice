@@ -4,6 +4,7 @@
   <% @articles.each do |article| %>
     <li>
       <%= link_to article.title, article %>
+      <%# The 'link_to' helper knows how to extract the path from the article element %>
     </li>
   <% end %>
 </ul>
