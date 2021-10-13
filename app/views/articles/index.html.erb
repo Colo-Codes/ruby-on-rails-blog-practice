@@ -1,11 +1,15 @@
 <h1>Articles#index</h1>
 
+Our blog has <%= Article.public_count %> articles and counting!
+
 <ul>
   <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article %>
-      <%# The 'link_to' helper knows how to extract the path from the article element %>
-    </li>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+        <%# The 'link_to' helper knows how to extract the path from the article element %>
+      </li>
+    <% end %>
   <% end %>
 </ul>
 

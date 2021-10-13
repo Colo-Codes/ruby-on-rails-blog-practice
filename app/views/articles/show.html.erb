@@ -10,3 +10,11 @@
             method: :delete,
             data: { confirm: "Are you sure?" } %></li> 
 </ul>
+
+<h2>Comments</h2>
+<%# This will now render the partial in app/views/comments/_comment.html.erb once for each comment that is in the @article.comments collection. %>
+<%= render @article.comments %>
+
+<h2>Add a comment:</h2>
+<%# This second render just defines the partial template we want to render, comments/form. %>
+<%= render 'comments/form' %>
